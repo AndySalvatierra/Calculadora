@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.contenedor-con-fondo {
+  background-image: url('C:\Users\PC\Downloads\Calculadora-master\src\assets\imagenes/fondo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenedor {
+  border: 5px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  animation: scale 1.5s ease-in-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.calculadora {
+  text-align: center;
+}
+
+.calculadora h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.calculadora input {
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+.calculadora button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculadora button:hover {
+  background-color: #45a049;
+}
+
+.calculadora p {
+  font-size: 18px;
+  margin: 10px;
+  color: #333;
+}
+
+.calculadora button.limpiar {
+  background-color: #f44336;
+}
+
+.calculadora button.limpiar:hover {
+  background-color: #d32f2f;
+}
+
+.calculadora button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
